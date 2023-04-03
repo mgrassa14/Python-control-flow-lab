@@ -6,4 +6,10 @@
 # 2. Print the following message:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
+word_phrase = input('Please enter a word or phrase: ')
+length = len(word_phrase)
 
+while word_phrase != 'quit':
+    print(f'What you entered is {length} characters long')
+    word_phrase = input('Please enter a word or phrase: ')
+    length = len(word_phrase)
